@@ -29,5 +29,5 @@ export const authorizeAdmin = (req, res, next) => {
         403
       )
     );
-    next();
+  next();
 };
