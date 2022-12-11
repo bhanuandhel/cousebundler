@@ -14,8 +14,8 @@ cloudinary.v2.config({
 });
 
 export const instance = new RazorPay({
-  key_id: process.env.RAZORPAY_API_KEY,
-  key_secret: process.env.RAZORPAY_API_SECRET,
+  key_id: process.env.RAZORPAY_API_KEY || "rzp_test_3o6r2ZMmGiQeyp",
+  key_secret: process.env.RAZORPAY_API_SECRET || "PIg74Uq8UZdThKxQhJq6QvNA",
 });
 
 nodeCron.schedule("0 0 0 5 * *", async () => {
